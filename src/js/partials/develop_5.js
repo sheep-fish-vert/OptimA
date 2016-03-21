@@ -10,10 +10,22 @@ try{
             }
         });
     }
+    function search(){
+        $('.search-show').click(function() {
+            $(this).toggleClass('active');
+            if($(this).hasClass('active')){
+                $('.search form').addClass('slideThis');
+            }else{
+                $('.search form').removeClass('slideThis');
+            }
+        });
+    }
+
 
 
     $(document).ready(function(){
          butter();
+         search();
     });
 
     $(window).load(function(){
