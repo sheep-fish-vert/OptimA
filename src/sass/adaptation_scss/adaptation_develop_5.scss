@@ -1,0 +1,33 @@
+/*header*/
+    @media screen and (max-width: 992px){
+        header {    padding-bottom: 62px;}
+        .header-wrap {padding-bottom: 26px;}
+        nav{
+            .top-menu{
+                .butter{display: block;}
+                li{display: block;     padding: 14px 15px 15px;position: relative;
+                    &:before{content: ''; display: block; position: absolute; left:0; bottom: 0; width: 100%; height: 2px; background-color: #ececec; }
+                }
+                ul{ display: block; height: auto; max-width: 220px; left: 46px; top: -21px; position: absolute; padding: 15px 22px 14px; transform:scale(1,0); opacity: 0; transition:all 500ms;}
+                a{font-size: 19px;}
+                .active{
+                    a{font-size: 19px; color: #104766; letter-spacing: 0px;
+                        &:before{display: none;}
+                    }
+                }
+            }
+        }
+    }
+     @media screen and (max-width: 800px){
+        .header-wrap {
+            .search{float:none; position: absolute; right: 0;  padding: 0 56px 0 0; height: 44px; top:95px;
+
+                .search-show{ position: absolute; width: 56px; height: 44px; background-color: #fff; box-shadow: -1px 1px 4px 0px rgba(0,0,0,0.1); padding: 0;     right: -20px;     top: 0; display: block;
+                    &:before{background-image: url(../images/ico-searchB.png); background-position: center center; background-repeat: no-repeat; width: 18px; height: 18px; position: absolute; left: calc(50% - 9px); top: calc(50% - 9px); display: block; content: '';}
+                }
+
+            }
+        }
+
+     }
+/*END header*/

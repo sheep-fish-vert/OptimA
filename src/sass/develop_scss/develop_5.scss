@@ -1,0 +1,74 @@
+.global-wrapper{max-width: 940px; width: 100%; margin:0 auto; background-color: rgba(255,255,255,0.85); padding: 0 14px; }
+.background{width: 100%; background-size:100% auto; background-repeat: no-repeat; padding: 50px 11px 0; overflow: hidden;
+}
+/*header*/
+    header{padding-bottom: 100px;}
+    .header-wrap{padding-bottom: 15px; position: relative;
+
+        .logo{float:left;    padding: 20px 0 0 4px;}
+        .search{float: left; padding: 28px 0 0 72px;
+            .search-show{display: none;}
+            form{position: relative;}
+            span{ font:300 italic 10px/10px 'Open Sans';  color: #b3b3b3; position: absolute;     top: 11px;    left: 17px;}
+            button{border-radius: 50%; background-color: #fff; width: 29px; height: 29px; position: relative; border:none; cursor: pointer; position: absolute; right: 0; top: 1px;
+                &:before{background-image: url(../images/ico-search.png); background-position: center center; background-repeat: no-repeat; width: 13px; height: 13px; position: absolute; left: calc(50% - 6.5px); top: calc(50% - 6.5px); display: block; content: '';}
+            }
+            input{display: block; background-color: #ecf6fb; width: 218px; height: 31px; border-radius: 15px; border:1px solid #e7f1f8; box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.05), inset 0px 0px 4px 0px rgba(0,0,0,0.05); position: relative;font:300 italic 10px/10px 'Open Sans';  color: #777; padding-left: 17px;}
+            ::-webkit-input-placeholder {font:300 italic 10px/10px 'Open Sans';  color: #777;}
+            :-moz-placeholder {font:300 italic 10px/10px 'Open Sans';  color: #777;}
+            ::-moz-placeholder {font:300 italic 10px/10px 'Open Sans';  color: #777;}
+            :-ms-input-placeholder {font:300 italic 10px/10px 'Open Sans';  color: #777;}
+            input:active+span{display: none;}
+            input:focus+span{display: none;}
+        }
+        .phonelist{float: right; padding: 17px 10px 0 0;
+            span{font:400 12px/12px 'Open Sans'; color: #4d4d4d;}
+            i{background-position: center center; background-repeat: no-repeat; width: 12px; height: 12px; display: inline-block;vertical-align: middle;     margin-right: 5px;}
+            .phone{
+                i{background-image: url(../images/ico-phone.png);}
+            }
+            .fax{
+                i{background-image: url(../images/ico-fax.png);}
+            }
+        }
+    }
+    nav{
+        .top-menu{ width: calc(100% + 40px); position: relative; left: -20px;
+            &:before,
+            &:after{content: ''; display: block; top:43px; width: 0; height: 0; position: absolute;}
+            &:before{left: 0;
+                    border: 3px solid transparent;
+                    border-top: 3px solid #10384e;
+                    border-right: 3px solid #10384e;
+            }
+            &:after{right: 0;
+                    border: 3px solid transparent;
+                    border-top: 3px solid #10384e;
+                    border-left: 3px solid #10384e;
+            }
+            .butter{width: 56px; height: 44px; background-color: #fff; box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.1);     padding-top: 12px; position: absolute; top: 0; left: 0; cursor: pointer; display: none;
+                &:before{content: ''; display: block; top: 13px;    left: 8px; width: 0; height: 0; position: absolute; opacity: 0; transition: opacity 500ms;
+                    border: 9px solid transparent;
+                    border-right: 9px solid #f05323;
+                }
+                p{display: block; height: 5px; border-radius: 1px; background-color: #f05323; width: 20px;  opacity: 1;  margin: 0 auto 2px; transition: opacity 500ms;}
+                &.active{
+                     &:before{opacity: 1;}
+                     p{opacity: 0;}
+                }
+            }
+            ul{width: 100%; background-color: #fff; display: flex; justify-content:space-around; padding: 14px 78px 0; height: 43px;
+            box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.1);  transform-origin: center top; transform:scale(1,1);
+                &.slideThis{transform:scale(1,1); opacity:1;}
+            }
+            li{display: inline-block;}
+            a{font:400 14px/14px 'Roboto Condensed'; color: #333; text-decoration: none;}
+            .active{
+                a{font:700 14px/14px 'Roboto Condensed'; position: relative;
+                    &:before{content: ''; width: 100%; height: 3px; background-color: #f05323; position: absolute; left: 0; bottom: -12px;}
+                }
+            }
+
+        }
+    }
+/*END header*/

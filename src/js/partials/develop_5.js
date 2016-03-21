@@ -1,7 +1,19 @@
 try{
 
-    $(document).ready(function(){
+    function butter(){
+        $('.butter').click(function() {
+            $(this).toggleClass('active');
+            if($(this).hasClass('active')){
+                $('.top-menu ul').addClass('slideThis');
+            }else{
+                $('.top-menu ul').removeClass('slideThis');
+            }
+        });
+    }
 
+
+    $(document).ready(function(){
+         butter();
     });
 
     $(window).load(function(){
@@ -11,6 +23,11 @@ try{
     $(window).resize(function(){
 
     });
+
+
+
+
+
 
 }
 catch(e){
