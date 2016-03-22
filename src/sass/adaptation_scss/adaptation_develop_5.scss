@@ -42,4 +42,37 @@
         }
 
      }
+     @media screen and (max-width: 530px){
+        .header-wrap{text-align: center;
+            .logo{float:none;  display: inline-block;  padding: 26px 0 0 0;}
+            .search{top: 93px;z-index: 500;}
+            .phonelist{float: none; display: inline-block; padding: 16px 0 0 0;
+                span{font:400 15.12px/15.12px 'Open Sans';}
+                i{width: 15px;height: 15px;}
+                .phone{margin-bottom: 5px;
+                    i{background-image: url(../images/ico-phone2.png);}
+                }
+                .fax{
+                    i{background-image: url(../images/ico-fax2.png);}
+                }
+            }
+        }
+        nav{margin-top: -74px;}
+     }
 /*END header*/
+/*footer*/
+     @media screen and (max-width: 992px){
+        .footer-wrap{
+           ul{padding-bottom: 30px;}
+           li{margin-right: 2px;}
+           a{width: 33px;height: 33px;}
+           i{
+                &.yt{background-image: url(../images/soc-yt2.png);width: 17px; height: 20px;}
+                &.fb{background-image: url(../images/soc-fb2.png);width: 10px;height: 20px;}
+                &.tw{background-image: url(../images/soc-tw2.png);width: 16px;height: 14px;}
+                &.vk{background-image: url(../images/soc-vk2.png);width: 22px;height: 14px;}
+                &.gp{background-image: url(../images/soc-gp2.png);width: 23px;  height: 14px;}
+           }
+        }
+    }
+/*END footer*/

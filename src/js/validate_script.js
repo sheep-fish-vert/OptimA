@@ -188,7 +188,27 @@ function popNext(popupId, popupWrap){
 
 }
 
+function validationSearch(form){
 
+  var thisForm = $(form);
+  var formSur = thisForm.serialize();
+
+    $.ajax({
+        url : thisForm.attr('action'),
+        data: formSur,
+        method:'POST',
+        success : function(data){
+            if ( data.trim() == 'true') {
+                thisForm.trigger("reset");
+
+            }
+            else {
+               thisForm.trigger('reset');
+            }
+
+        }
+    });
+}
 
 /*маска на инпуте*/
 function Maskedinput(){
@@ -212,6 +232,7 @@ function fancyboxForm(){
 
 $(document).ready(function(){
    validate('#call-popup .contact-form', {submitFunction:validationCall});
+   validate('.search-form', {submitFunction:validationSearch});
    Maskedinput();
    fancyboxForm();
 });
