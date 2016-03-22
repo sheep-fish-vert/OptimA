@@ -6,11 +6,16 @@
         </div>
         <div class="search">
             <div class="search-show"></div>
-            <form action="ajax.php" name="search-form">
-                <label>
-                    <input type="text">
-                    <span>Поиск...</span>
-                </label>
+            <form action="ajax.php" name="search-form" class="search-form">
+                <div class="form_row">
+                    <div class="form_input">
+                        <label>
+                            <input type="text"  name="search" required="required">
+                            <span>Поиск...</span>
+                        </label>
+                    </div>
+                </div>
+
                 <button type="submit"></button>
             </form>
         </div>
