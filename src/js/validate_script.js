@@ -233,6 +233,7 @@ function fancyboxForm(){
 $(document).ready(function(){
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    validate('.search-form', {submitFunction:validationSearch});
+   validate('.contact-form form', {submitFunction:validationCall,validationCallDocument});
    Maskedinput();
    fancyboxForm();
 });
