@@ -14,7 +14,7 @@
 /* base styles*/
 *,*:before, *:after{box-sizing:border-box;outline:none;}
 html{height:100%;}
-body{min-height:100%;width:100%;font-family:arial,sans-serif;background:#fff;color:#3d3d3d;position:relative;font-size: 16px;line-height: 1;}
+body{min-height:100%;width:100%;font-family: 'Open Sans', sans-serif;background:#fff;color:#333333;position:relative;font-size: 14px;line-height: 1;}
 img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* /base styles */
@@ -36,3 +36,18 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 :-ms-input-placeholder {color:#212121;}
 
 /*End Layout*/
+
+.ctext{
+    p{display: block;margin-before: 1em;margin-after: 1em;margin-start: 0px;margin-end: 0px;    -webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;}
+    strong, b {font-weight: bold;}
+    i, cite, em, var, address, dfn {font-style: italic;}
+    li {display: list-item;text-align:match-parent;text-align: -webkit-match-parent;}
+    ul, menu, dir {display: block;list-style-type: disc;margin-before: 1em;margin-after: 1em;margin-start: 0px;margin-end: 0px;padding-start: 40px;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 40px;}
+    ol {display: block;list-style-type: decimal;margin-before: 1em;margin-after: 1em;margin-start: 0px;margin-end: 0px;padding-start: 40px;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 40px;}
+    table {display: table;border-collapse: separate;border-spacing: 2px;border-color: grey;}
+    tbody {display: table-row-group;vertical-align: middle;border-color: inherit;}
+    tr {display: table-row;vertical-align: inherit;border-color: inherit;}
+    td, th {display: table-cell;vertical-align: inherit;}
+    blockquote {display: block;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 40px;-webkit-margin-end: 40px;margin-before: 1em;margin-after: 1em;margin-start: 40px;margin-end: 40px;}
+    blockquote, q {quotes: inherit;}
+}

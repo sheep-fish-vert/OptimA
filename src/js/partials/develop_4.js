@@ -1,7 +1,19 @@
 try{
 
-    $(document).ready(function(){
+    function vacancyShowMore(){
+        $(document).on('click','.mobile-show-more span',function(event){
+            $('.mobile-show-more').remove();
+            $.ajax({
+                url : 'vacant-ajax.php',
+                success : function(data){
+                    $('.vacant .items').append(data);
+                }
+            });
+        });
+    }
 
+    $(document).ready(function(){
+        vacancyShowMore();
     });
 
     $(window).load(function(){
