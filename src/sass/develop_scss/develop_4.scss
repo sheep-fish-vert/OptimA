@@ -1,0 +1,27 @@
+.background{background-color: #046eac;}
+
+/*breadcrumbc*/
+.breadcrumb-navigation{font-size: 10px;color: #000000;padding-top: 28px;padding-bottom: 19px;
+    li{display: inline-block;}
+    span{color: #808080;}
+    a{color: #808080;text-decoration: underline;
+        &:hover{text-decoration: none;}
+    }
+}
+/*/breadcrumbc*/
+
+/*title*/
+.title{font-weight: 500;font-size: 18px;color: #f05323;padding-bottom: 18px;
+
+}
+/*/title*/
+
+/*vacant*/
+.vacant{
+    .items{
+        .item{float: left;width: 32%;outline: 1px solid red;margin-right: 2%;margin-bottom: 15px;border:1px solid #ecf2f7;border-top: none;padding: 17px;height: 196px;
+            &:nth-child(3n){margin-right: 0;}
+        }
+    }
+}
+/*/vacant*/
