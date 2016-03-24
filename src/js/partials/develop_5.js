@@ -20,12 +20,22 @@ try{
             }
         });
     }
+    var canIUse = false;
+    function prod01(){
+        if(canIUse == true){
+            $('.prod01-wrap .item .txt').click(function() {
+                $(this).toggleClass('active');
+             });
+        }
+    }
 
 
 
     $(document).ready(function(){
+        if($(window).width()<992){ canIUse = true;}else{ canIUse = false;};
          butter();
          search();
+         prod01();
     });
 
     $(window).load(function(){
@@ -33,7 +43,7 @@ try{
     });
 
     $(window).resize(function(){
-
+        if($(window).width()<992){ canIUse = true;}else{ canIUse = false;};
     });
 
 
