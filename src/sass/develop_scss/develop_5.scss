@@ -3,7 +3,6 @@
 .background{width: 100%; min-height: 100vh; background-size:100% auto; background-repeat: no-repeat; padding: 50px 11px 0; overflow: hidden;}
 .no-footer{height: 30px; width: 100%; background-color: transparent;}
 /*header*/
-
     .header-wrap{padding-bottom: 15px; position: relative;
 
         .logo{float:left;    padding: 20px 0 0 4px;}
@@ -125,3 +124,52 @@
         }
     }
 /*END prod01*/
+/*prod02*/
+    .prod02{
+
+        .prod02-wrap{
+            .title{    padding-bottom: 14px;}
+            .tags{width: 75%; text-align: center; margin:0 auto; padding-top: 36px;
+                span{background-color: #f05323; width: 96px; font:700 13.47px/16px 'Roboto Condensed'; color: #fff; display: inline-block; position: relative; height: 30px; margin-right: 20px; text-align: center;     padding-top: 7px;     margin-bottom: 8px;
+                    &:before{content: ''; position: absolute;display: block; background-image: url(../images/bybluk.png); width: 15px;height: 30px; left:-15px; top:0;}
+                }
+            }
+        }
+    }
+    .txt-box{
+                .hr{width: 100%; height: 2px; background-color: #d1d6da;     margin: 19px 0 16px;}
+                h5{font:600 14px/18px 'Open Sans'; color: #333; }
+                p{font:300 12px/19px 'Open Sans'; color: #000;}
+                b{font:700 14px/18px 'Open Sans'; color: #1c80a3; max-width: 266px; text-align: right;display: inline-block; vertical-align: top;}
+                ul{display: inline-block; width: calc(100% - 290px);padding-left: 13px;}
+                li{font:400 12px/17px 'Open Sans'; color:#153c51; position: relative;
+                    &:before{content: ''; display: block; display: block;position: absolute; border: 3px solid transparent;border-left: 5px solid #f05323; left: -13px;top: 4px;}
+                }
+                a{font:600 12px/16px 'Open Sans'; color:#29abe2;}
+            }
+/*END prod02*/
+/*slider*/
+    .slider-wrap{     padding: 26px 14px 24px;
+        .slider{ display: flex; justify-content:space-around; background-color: #fff; padding: 22px 18px 24px;
+            .item{
+                .img{text-align: center;
+                    img{margin: 0 auto;}
+                }
+            }
+            .slick-prev {background-image: url(../images/leftA.png);left:-15px;}
+            .slick-next {background-image: url(../images/rightA.png);right:-15px;}
+            .slick-arrow{background-position: center center; width: 27px; height: 27px; z-index: 500; border-radius: 50%; overflow: hidden;  border:1px solid #dfebf3;
+                &:before{display: none; }
+            }
+        }
+    }
+
+/*END slider*/
+/*prod03*/
+    .prod03{
+        .prod03-wrap{
+            .slider-wrap {    padding: 3px 2px 0px;}
+
+        }
+    }
+/*END prod03*/
