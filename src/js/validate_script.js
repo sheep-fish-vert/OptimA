@@ -230,7 +230,15 @@ function fancyboxForm(){
   })
 }
 
+function formStylerFile(){
+    $('input[type=file]').styler({
+        filePlaceholder:"Файл не выбран ",
+        fileBrowse:"Выберите файл"
+    });
+}
+
 $(document).ready(function(){
+    formStylerFile();
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    validate('.search-form', {submitFunction:validationSearch});
    validate('.contact-form form', {submitFunction:validationCall,validationCallDocument});
