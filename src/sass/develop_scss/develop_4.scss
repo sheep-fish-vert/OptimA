@@ -65,9 +65,24 @@
 }
 /*/vacant-inner*/
 
-.contact-form{padding-top: 28px;
+.contact-form{padding-top: 26px;
     .form_row{margin-bottom: 6px;
+        &.file,&.capcha{padding-left: 75px;
+            p{font-size: 10px;color: #666666;margin-top: 11px;}
+        }
+        &.file{padding-top: 5px;}
         span{color: #999999;font-family: 'Roboto Condensed';display: inline-block;width: 72px;text-align: left;font-size: 10px;}
         input{height: 26px;line-height: 26px;background-color: #fff;color: #333333;font-family: 'Roboto Condensed';font-weight: bold;border:1px solid #a0b9c8;max-width: 214px;width: 100%;border-radius: 2px;padding: 0 10px;}
+        .jq-file__browse{width: 106px;height: 25px;color: white;background-color: #b3b3b3;border-radius: 2px;text-align: center;font-size: 10px;line-height: 25px;cursor: pointer;}
+        .jq-file__name{position: absolute;top: 6px;left: 114px;font-size: 10px;color: #000;}
+        .jq-file{position: relative;width: 100%;}
+
+        .capcha{
+            p{font-size: 10px;color: #000;margin-top: 20px;margin-bottom: 11px;}
+            .capcha-img{max-width: 104px;margin-right: 17px;display: inline-block;vertical-align: top;}
+            .capcha-text{max-width: 92px;display: inline-block;
+                input{height: 25px;line-height: 25px;background-color: #fff;color: #333333;font-family: 'Roboto Condensed';font-weight: bold;border:1px solid #a0b9c8;border-radius: 2px;padding: 0 10px;width: 100%;}
+            }
+        }
     }
 }
