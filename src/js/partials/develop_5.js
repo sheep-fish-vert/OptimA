@@ -1,5 +1,12 @@
 try{
-
+    var bLazy = new Blazy({
+            success: function(element){
+          setTimeout(function(){
+        var parent = element.parentNode;
+        parent.className = parent.className.replace(/\bloading\b/,'');
+          }, 200);
+            }
+   });
     function butter(){
         $('.butter').click(function() {
             $(this).toggleClass('active');
@@ -34,11 +41,16 @@ try{
           if($(window).width()<992){
               var div = $('.top-menu ul');
               var menuMobile = $('.butter');
-              if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
-                  {
+              var div2 = $('.search form');
+              var menuMobile2 = $('.search-show');
+              if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0){
                       menuMobile.removeClass('active');
                       div.removeClass('slideThis');
-                  }
+              }
+              if (!div2.is(event.target) && div2.has(event.target).length === 0 && !menuMobile2.is(event.target) && menuMobile2.has(event.target).length === 0){
+                      menuMobile2.removeClass('active');
+                      div2.removeClass('slideThis');
+              }
           }
         });
     }
