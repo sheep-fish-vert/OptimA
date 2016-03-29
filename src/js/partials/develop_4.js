@@ -38,7 +38,9 @@ try{
 
     $(document).ready(function(){
         vacancyShowMore();
-        googleMap('map'); //id
+        if($('#map').length>0){
+            googleMap('map'); //id
+        }
     });
 
     $(window).load(function(){

@@ -5,7 +5,6 @@
             <img src="images/logo.png" alt="">
         </div>
         <div class="search">
-            <div class="search-show"></div>
             <form action="ajax.php" name="search-form" class="search-form">
                 <div class="form_row">
                     <div class="form_input">
@@ -31,6 +30,21 @@
                 <p></p>
                 <p></p>
                 <p></p>
+            </div>
+            <div class="search in-nav">
+                <div class="search-show"></div>
+                <form action="ajax.php" name="search-form-in-nav" class="search-form2">
+                    <div class="form_row">
+                        <div class="form_input">
+                            <label>
+                                <input type="text"  name="search" required="required">
+                                <span>Поиск...</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit"></button>
+                </form>
             </div>
             <ul>
                 <li class="active"><a href="#">Главная</a></li>

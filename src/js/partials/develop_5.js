@@ -29,9 +29,22 @@ try{
         }
     }
 
-
+    function butterB(){
+        $(document).on('click touchstart',function (event){
+          if($(window).width()<992){
+              var div = $('.top-menu ul');
+              var menuMobile = $('.butter');
+              if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
+                  {
+                      menuMobile.removeClass('active');
+                      div.removeClass('slideThis');
+                  }
+          }
+        });
+    }
 
     $(document).ready(function(){
+      butterB();
         if($(window).width()<992){ canIUse = true;}else{ canIUse = false;};
          butter();
          search();

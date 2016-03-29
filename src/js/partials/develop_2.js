@@ -7,14 +7,11 @@ try {
 
 
     $(document).ready(function() {
-        console.log($(window).width()); 
         if (isFlashInstalled) {
-            console.log('zashlo'); 
             if ($(window).width() < 992) {
-                console.log('zashlo'); 
                 $('.convert-embled-element').css('display', 'none');
                 $('.convert-img').css('display', 'block');
-            } else { 
+            } else {
                 $('.convert-embled-element').css('display', 'block');
                 $('.convert-img').css('display', 'none');
             };
@@ -29,13 +26,11 @@ try {
     });
 
     $(window).resize(function() {
-        console.log($(window).width()); 
         if(isFlashInstalled){
             if ($(window).width() < 992) {
-                console.log('zashlo'); 
                 $('.convert-embled-element').css('display', 'none');
                 $('.convert-img').css('display', 'block');
-            } else { 
+            } else {
                 $('.convert-embled-element').css('display', 'block');
                 $('.convert-img').css('display', 'none');
             };
