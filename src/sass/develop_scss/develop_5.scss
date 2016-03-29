@@ -177,7 +177,9 @@
 /*news tags*/
     .tags-wrap{font:300 12px/10px 'Open Sans Condensed'; color: #29abe2; border-top:1px solid #c1c8cc;     padding: 15px 0 25px;
         b{font:700 10px/14px 'Roboto Condensed'; color: #333;text-transform: uppercase;margin-right: 6px;}
-        a{font:300 12px/10px 'Open Sans Condensed'; color: #29abe2; margin-right: 3px;}
+        a{font:300 12px/10px 'Open Sans Condensed'; color: #29abe2; margin-right: 3px;
+            &:hover{text-decoration: none;}
+        }
     }
 /*END news tags*/
 /*news*/
