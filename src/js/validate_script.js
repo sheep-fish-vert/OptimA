@@ -17,15 +17,21 @@ function validate(form, options){
 
         $form.validate({
             errorClass : 'errorText',
-            focusCleanup : true,
-            focusInvalid : false,
+            focusCleanup : false,
+            focusInvalid : true,
             invalidHandler: function(event, validator) {
                 if(typeof(setings.errorFunction) === 'function'){
                     setings.errorFunction(form);
                 }
             },
+            success:function(label, element){
+
+            },
             errorPlacement: function(error, element) {
-                error.appendTo( element.closest('.form_input'));
+                error.prependTo( element.closest('.form_input'));
+            },
+            onfocusout:function(event, element) {
+
             },
             highlight: function(element, errorClass, validClass) {
                 $(element).addClass('error');
@@ -36,9 +42,11 @@ function validate(form, options){
             },
             unhighlight: function(element, errorClass, validClass) {
                 $(element).removeClass('error');
+
                 if($(element).closest('.form_row').is('.error')){
                     $(element).closest('.form_row').removeClass('error').addClass('valid');
                 }
+
                 if( typeof(setings.unhighlightFunction) === 'function' ) {
                     setings.unhighlightFunction(form);
                 }
@@ -101,7 +109,7 @@ function validationCall(form){
   var formSur = thisForm.serialize();
 
     $.ajax({
-        url : thisForm.attr('action'),
+        url : ajaxUrl,
         data: formSur,
         method:'POST',
         success : function(data){
@@ -126,7 +134,7 @@ function validationCallDocument(form){
     formData.append('file', thisForm.find('input[type=file]')[0].files[0]);
 
     $.ajax({
-        url: thisForm.attr('action'),
+        url: ajaxUrl,
         type: "POST",
         data: formData,
         contentType:false,
@@ -151,7 +159,7 @@ function validationCallDocuments(form){
     });
 
     $.ajax({
-        url: thisForm.attr('action'),
+        url: ajaxUrl,
         type: "POST",
         data: formData,
         contentType:false,
@@ -172,6 +180,7 @@ function popNext(popupId, popupWrap){
         padding:0,
         fitToView:false,
         wrapCSS:popupWrap,
+        'closeBtn' : false,
         autoSize:true,
         afterClose: function(){
             $('form').trigger("reset");
@@ -194,7 +203,7 @@ function validationSearch(form){
   var formSur = thisForm.serialize();
 
     $.ajax({
-        url : thisForm.attr('action'),
+        url : ajaxUrl,
         data: formSur,
         method:'POST',
         success : function(data){
@@ -239,9 +248,9 @@ function formStylerFile(){
 
 $(document).ready(function(){
     formStylerFile();
-   validate('#call-popup .contact-form', {submitFunction:validationCall});
-   validate('.search-form', {submitFunction:validationSearch});
-   validate('.contact-form form', {submitFunction:validationCall,validationCallDocument});
-   Maskedinput();
-   fancyboxForm();
+    validate('#call-popup .contact-form', {submitFunction:validationCall});
+    validate('.search-form', {submitFunction:validationSearch});
+    validate('.contact-form form', {submitFunction:validationCall,validationCallDocument});
+    Maskedinput();
+    fancyboxForm();
 });

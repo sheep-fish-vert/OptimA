@@ -12,8 +12,33 @@ try{
         });
     }
 
+    function googleMap(mapWrap){
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(cordX,cordY);
+            var myOptions = {
+                zoom: 16,
+                center: myLatlng,
+                disableDefaultUI: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                zoomControlOptions: {
+                   position: google.maps.ControlPosition.LEFT_BOTTOM
+                }
+            };
+            var map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                animation: google.maps.Animation.DROP,
+            });
+        }
+        initialize();
+    }
+
+
     $(document).ready(function(){
         vacancyShowMore();
+        googleMap('map'); //id
     });
 
     $(window).load(function(){

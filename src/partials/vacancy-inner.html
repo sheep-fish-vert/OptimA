@@ -17,9 +17,6 @@
         </div>
     </div>
     <div class="vacant-bottom cfix">
-        <div class="or">
-            <span>или</span>
-        </div>
         <div class="item item-1">
             <div class="item-wrap">
                 <div class="item-title">Свяжитесь с нами для получения дополнительной информации</div>
@@ -37,26 +34,29 @@
                 </div>
             </div>
         </div>
+        <div class="or">
+            <span>или</span>
+        </div>
         <div class="item item-2">
             <div class="item-wrap">
                 <div class="item-title">Отправте Ваше резюме и мы с Вами свяжемся</div>
                 <div class="contact-form">
-                    <form action="" name="contact-form" >
+                    <form action="ajax.php" name="contact-form" >
                         <div class="contact-form-item-input form_row">
                             <div class="form_input">
                                 <span>Ваши имя * </span>
-                                <input type="text" name="contact_name" required="required" value="">
+                                <input type="text" name="contact_name" placeholder="Ваши имя *" required="required" value="">
                             </div>
                         </div>
                         <div class="contact-form-item-input form_row">
                             <div class="form_input">
                                 <span>Ваш e-mail *</span>
-                                <input type="text" name="contact_name" required="required" value="">
+                                <input type="email" name="contact_email" required="required" value="" placeholder="Ваш e-mail *">
                             </div>
                         </div>
                         <div class="contact-form-item-input form_row file">
                             <div class="form_input">
-                                <input type="file" name="contact_mail">
+                                <input type="file" name="contact_file">
                             </div>
                             <p>Поддерживаются форматы: doc, docx, rtf, txt, odt, pdf (1 Мб)</p>
                         </div>
@@ -66,7 +66,7 @@
                                     <p>Введите код, указанный на картинке:</p>
                                     <div class="capcha-img"><img src="images/capcha.jpg" alt=""></div>
                                     <div class="capcha-text">
-                                        <input type="text" name="capcha-text"  value="">
+                                        <input type="text" name="capcha-text" required="required" value="">
                                     </div>
                                 </div>
                             </div>
