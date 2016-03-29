@@ -42,6 +42,7 @@ try{
               var div = $('.top-menu ul');
               var menuMobile = $('.butter');
               var div2 = $('.search form');
+              var div3 = $('.prod01-wrap .item .txt');
               var menuMobile2 = $('.search-show');
               if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0){
                       menuMobile.removeClass('active');
@@ -50,6 +51,9 @@ try{
               if (!div2.is(event.target) && div2.has(event.target).length === 0 && !menuMobile2.is(event.target) && menuMobile2.has(event.target).length === 0){
                       menuMobile2.removeClass('active');
                       div2.removeClass('slideThis');
+              }
+              if (!div3.is(event.target) && div3.has(event.target).length === 0){
+                      div3.removeClass('active');
               }
           }
         });
