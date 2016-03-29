@@ -1,4 +1,7 @@
 .background{background-color: #046eac;}
+.b-lazy{margin:0 auto;display: block;
+    &.b-loaded{margin:inherit;display: inline;}
+}
 
 /*breadcrumbc*/
 .breadcrumb-navigation{font-size: 10px;color: #000000;padding-top: 28px;padding-bottom: 19px;
