@@ -132,7 +132,7 @@
         .prod02-wrap{
             .title{    padding-bottom: 14px;}
             .tags{width: 75%; text-align: center; margin:0 auto; padding-top: 36px;
-                span{background-color: #f05323; width: 96px; font:700 13.47px/16px 'Roboto Condensed'; color: #fff; display: inline-block; position: relative; height: 30px; margin-right: 20px; text-align: center;     padding-top: 7px;     margin-bottom: 8px;
+                a{background-color: #f05323; width: 96px; font:700 13.47px/16px 'Roboto Condensed'; color: #fff; display: inline-block; position: relative; height: 30px; margin-right: 20px; text-align: center;     padding-top: 7px;     margin-bottom: 8px; text-decoration: none;
                     &:before{content: ''; position: absolute;display: block; background-image: url(../images/bybluk.png); width: 15px;height: 30px; left:-15px; top:0;}
                 }
             }
@@ -205,7 +205,7 @@
             }
             .content-news{display: flex; flex-wrap:wrap; justify-content: space-around;     padding-top: 14px;
                 .item{max-width: 286px; width: 100%;     margin-bottom: 24px;
-                    .img{}
+                    .img{text-align: center;}
                     .txt{background-color: #fff; padding: 14px 12px 21px;}
                     .date{font:300 10px/14px 'Open Sans'; color:#4d4d4d; padding-bottom: 8px;}
                     .title-news{
