@@ -102,7 +102,9 @@
         .item{
             .title-text{font-size: 24px;}
             .subtitle-text{font-size: 15px;}
-            .text{font-size: 18px;}
+            .text{font-size: 18px;
+                p{margin: 0.6em 0;line-height: 1.6em;}
+            }
         }
         .vacant-bottom{
             .or{position: relative;top: 0;height: auto;margin-bottom: 28px;text-align: center;
@@ -115,7 +117,7 @@
                 &.item-1{width: 100%;}
                 &.item-2{width: 100%;padding-left: 0;}
             }
-            .item-title{max-width: 100%;text-align: center;font-size: 21px;border-bottom: 2px solid #c5cacc;margin-bottom: 25px;padding-bottom: 25px;}
+            .item-title{max-width: 100%;text-align: center;font-size: 21px;border-bottom: 2px solid #c5cacc;margin-bottom: 25px;padding-bottom: 25px;line-height: 26px;}
             .item-text{padding-top: 0;font-size: 18px;
                 span{}
                 p{line-height: 24px;}
@@ -146,7 +148,7 @@
             input[type=file]{}
             .capcha{
                 p{}
-                .capcha-img{max-width: 170px;width: 100%;}
+                .capcha-img{max-width: 170px;width: 100%;margin-bottom: 10px;}
                 .capcha-text{max-width: 170px;width: 100%;
                     input{height: 40px;line-height: 39px;border: 2px solid #a0b9c8;}
                 }
@@ -200,7 +202,7 @@
             .title-text{font-size: 24px;padding-bottom: 21px;margin-bottom: 23px;}
             .subtitle-text{font-size: 15px;}
             .text{font-size: 18px;
-                p{margin: 0.6em 0;line-height: 1.6em;}
+                p{}
             }
         }
         .vacant-bottom{padding: 0 22px;
