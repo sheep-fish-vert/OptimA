@@ -164,7 +164,7 @@
             .contact-form{
                 .form_row{
                     button[type=submit]{max-width: 107px;height: 30px;font-size: 15px;margin-top: 5px;}
-                    input{max-width: 214px;height: 26px;font-size: 13px;border: 1px solid #a0b9c8;    font-family: 'Roboto Condensed';font-weight: bold;
+                    input{max-width: 214px;height: 26px;font-size: 13px;border: 1px solid #a0b9c8;    font-family: 'Roboto Condensed';font-weight: bold;line-height: 26px;
                         &::-webkit-input-placeholder {font-weight: bold;font-size: 13px;}
                         &:-moz-placeholder {font-weight: bold;font-size: 13px;}
                         &::-moz-placeholder {font-weight: bold;font-size: 13px;}
@@ -252,6 +252,8 @@
             button[type=submit]{margin-top: 21px;}
         }
     }
+
+    .contacts .contacts-items .contact-form .form_row.capcha .capcha-text input{height: 25px;}
 }
 @media screen and (max-width: 375px){
     /*vacant-inner*/
