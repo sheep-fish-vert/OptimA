@@ -4,7 +4,7 @@
 .no-footer{height: 30px; width: 100%; background-color: transparent;}
 /*header*/
     .search{float: left; padding: 28px 0 0 72px;
-            .search-show{display: none;}
+            .search-show{display: none; cursor: pointer;}
             form{position: relative;}
             span{ font:300 italic 10px/10px 'Open Sans';  color: #b3b3b3; position: absolute;     top: 11px;    left: 17px;}
             button{border-radius: 50%; background-color: #fff; width: 29px; height: 29px; position: relative; border:none; cursor: pointer; position: absolute; right: 0; top: 1px;
@@ -25,6 +25,7 @@
         .logo{float:left;    padding: 20px 0 0 4px;}
 
         .phonelist{float: right; padding: 17px 10px 0 0;
+            a{text-decoration: none;}
             span{font:400 12px/12px 'Open Sans'; color: #4d4d4d;}
             i{background-position: center center; background-repeat: no-repeat; width: 12px; height: 12px; display: inline-block;vertical-align: middle;  margin-right: 5px;}
             .phone{
