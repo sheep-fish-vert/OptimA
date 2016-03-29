@@ -84,12 +84,10 @@
             &:focus{border-color: #ed8363;}
         }
         .errorText{display: none !important;}
-        .jq-file__browse{width: 106px;height: 25px;color: white;background-color: #b3b3b3;border-radius: 2px;text-align: center;font-size: 10px;line-height: 25px;}
+        .jq-file__browse{width: 106px;height: 25px;color: white;background-color: #b3b3b3;border-radius: 2px;text-align: center;font-size: 10px;line-height: 25px;position: relative;cursor: pointer;}
         .jq-file__name{position: absolute;top: 6px;left: 114px;font-size: 10px;color: #000;}
-        .jq-file{position: relative;width: 100%;
-            //input:hover{cursor: pointer;}
-        }
-        input[type=file]{left: 0;right: 0;}
+        .jq-file{position: relative;width: 100%;z-index: 1;}
+        input[type=file]{left: 100%;right: 0;width: 106px !important;}
         .capcha{
             p{font-size: 10px;color: #000;margin-top: 20px;margin-bottom: 11px;}
             .capcha-img{max-width: 104px;margin-right: 17px;display: inline-block;vertical-align: top;}

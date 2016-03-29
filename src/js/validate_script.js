@@ -25,7 +25,7 @@ function validate(form, options){
                 }
             },
             success:function(label, element){
-
+                $(element).closest('.form_row').removeClass('valid');
             },
             errorPlacement: function(error, element) {
                 error.prependTo( element.closest('.form_input'));
@@ -243,6 +243,10 @@ function formStylerFile(){
     $('input[type=file]').styler({
         filePlaceholder:"Файл не выбран ",
         fileBrowse:"Выберите файл"
+    });
+
+    $(document).on('click', '.jq-file__browse', function(event) {
+        $(this).parent().find('input[type=file]').click();
     });
 }
 
