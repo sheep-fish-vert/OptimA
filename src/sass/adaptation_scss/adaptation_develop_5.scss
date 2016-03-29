@@ -248,3 +248,24 @@
         }
     }
 /*END news*/
+/*news-inner*/
+    @media screen and (max-width:666px){
+         .news-inner{    padding-top: 6px;
+            .title{display: none;}
+
+         }
+    }
+    @media screen and (max-width:480px){
+         .news-inner{
+             .news-inner-wrap{
+                .content{
+                    .img {min-height: 190px;    position: relative;    overflow: hidden;
+                        img{    height: 190px;      position: relative;    left: 50%;    transform: translateX(-50%); max-width: none;}
+                    }
+                    .titl{font:700 18px/22px 'Open Sans';}
+                }
+            }
+
+         }
+    }
+/*END news-inner*/

@@ -239,3 +239,19 @@
         }
     }
 /*END news*/
+/*news-inner*/
+    .news-inner{
+        .news-inner-wrap{    padding-bottom: 27px;
+            .content{box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
+                .img {
+                    img{}
+                 }
+                .txt{background-color: #fff;    padding: 19px 19px 45px;}
+                .date{font:300 10px/14px 'Open Sans'; color:#4d4d4d;    padding-bottom: 11px;}
+                .titl{font:700 21px/25px 'Open Sans'; color:#0071bc;    padding-bottom: 11px;}
+                .text{font:400 12px/19px 'Open Sans'; color:#333;}
+            }
+        }
+    }
+
+/*END news-inner*/
