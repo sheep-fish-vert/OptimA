@@ -76,7 +76,7 @@ try{
       function initSlider(widthSome){
         $('#coin-slider').remove();
         $('.topest-element').append(sliderMarkup);
-        $('#coin-slider').coinslider({ width: widthSome, navigation: false, delay: 3000, effect: 'random', sDelay: 60 });
+        $('#coin-slider').coinslider({ width: widthSome, navigation: false, delay: 3000, effect: 'random', sDelay: 90,spw: 7,sph: 2 });
       }
 
       var widthSome = $('.topest-element').width();
