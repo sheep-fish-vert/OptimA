@@ -59,7 +59,47 @@ try{
         });
     }
 
+    function resizerForSlider(){
+      var sliderHtml = $('.coin-slider');
+      sliderHtml.removeClass('coin-slider');
+      sliderHtml.attr('id','coin-slider');
+      $('.topest-element').append(sliderHtml);
+      $('#coin-slider').coinslider({ width: 912, navigation: false, delay: 3000 });
+    }
+
+
+
+    function callSliderInit(){
+
+      var sliderMarkup = $('#coin-slider')[0];
+
+      function initSlider(widthSome){
+        $('#coin-slider').remove();
+        $('.topest-element').append(sliderMarkup);
+        $('#coin-slider').coinslider({ width: widthSome, navigation: false, delay: 3000, effect: 'random', sDelay: 60 });
+      }
+
+      var widthSome = $('.topest-element').width();
+
+      initSlider(widthSome);
+
+      var timer = null;
+
+      $(window).resize(function(){
+         clearTimeout(timer);
+         timer = setTimeout(function(){
+            widthSome = $('.topest-element').width();
+            initSlider(widthSome);
+         },500);
+      });
+
+    }
+
     $(document).ready(function(){
+      //resizerForSlider();
+
+      callSliderInit();
+
       butterB();
         if($(window).width()<992){ canIUse = true;}else{ canIUse = false;};
          butter();

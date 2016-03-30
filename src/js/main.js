@@ -7,6 +7,7 @@
 //= partials/plagins/jquery.fancybox.pack.js
 //= partials/plagins/jquery.formstyler.min.js
 //= partials/plagins/lazy.js
+//= partials/plagins/coin-slider.min.js
 
 /* /plagins */
 
