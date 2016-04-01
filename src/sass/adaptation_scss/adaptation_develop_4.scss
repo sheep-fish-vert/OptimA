@@ -38,8 +38,8 @@
             .item{float: none;width: 100%;margin-right: 0;height: auto;background-color: #fff;border: 1px solid rgba(236, 242, 247, 0.68);padding: 15px;position: relative;padding-bottom: 19px;
                 .title-text{padding-bottom: 10px;margin-bottom: 12px;}
                 .text{height: auto;font-size: 12px;line-height: 18px;}
-                .more{position: absolute;top: 0;left: 0;right: 0;bottom: 0;
-                    a{display: block;height: 100%;font-size: 0;}
+                .more{
+                    a{display: inline-block;padding: 5px 0px 3px;}
                 }
             }
         }
