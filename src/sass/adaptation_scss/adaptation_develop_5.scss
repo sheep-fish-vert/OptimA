@@ -130,8 +130,8 @@
             .prod01-wrap{justify-content:space-around; flex-wrap:wrap; padding: 0px 0 148px;
                 .item-wrap{width: 100%}
                 .item{max-width: 276px; margin: 0 auto; width: 100%; display: block;
-                    .img{height: 0; opacity:0; margin: 0;}
-                    .img2{height: 160px; opacity: 1;}
+                    .img{height: 0; opacity:0; margin: 0;width: 0;}
+                    .img2{height: 160px; opacity: 1;width: 276px;}
                     .txt{background-color: #f05323; top: -33px; left: calc(50% - 95px); position: relative; height: 46px; overflow: hidden; min-height: auto; cursor: pointer; transition: all 500ms;     margin-bottom: -19px;
                         h5{color: #fff;text-align: center; position: relative;   margin-bottom: 19px; transition: all 500ms;
                             &:before{content: ''; display:  block; position: absolute; top:100%; border: 4px solid transparent; left: calc(50% - 4px);
@@ -166,8 +166,12 @@
                     li{font:400 14px/18px 'Open Sans';color:#f05323;     padding-bottom: 14px;
                         &:before{    border: 4px solid transparent;    border-left: 6px solid #f05323;    left: -17px;}
                     }
-                    a{font:600 16px/20px 'Open Sans'; display: block;width: 100%; text-align: center;}
                 }
+    }
+    @media screen and (max-width:480px){
+       /*  .txt-box{
+                   a{font:600 16px/20px 'Open Sans'; display: block;width: 100%; text-align: center;}
+               } */
     }
 
 /*END prod02*/
@@ -216,7 +220,9 @@
                     ul{ top:0;}
                     li{margin-left: -4px; margin-bottom: 8px; margin-right: 9px;
                         a{ width: 137px; height: 34px; padding: 10px 0; text-align: center;
-                            span{border:none; padding: 0;}
+                            span{border:none; padding: 0;
+                                &:before{width: 100%; left:0;}
+                            }
                         }
                         &:nth-child(2n-1){margin-right: 0;}
                     }

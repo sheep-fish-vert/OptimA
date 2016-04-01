@@ -80,7 +80,9 @@
     .footer-wrap{text-align: center;
        ul{display: inline-block;padding-bottom: 15px;}
        li{float:left;margin-right: 1px;}
-       a{width: 23px;height: 23px; background-color: rgba(255,255,255,0.85); display: block;position: relative;}
+       a{width: 23px;height: 23px; background-color: rgba(255,255,255,0.85); display: block;position: relative;
+            &:hover{background-color: rgba(255,255,255,1);}
+       }
        i{display: block; background-position: left top; background-repeat: no-repeat; position: absolute; left:50%; top:50%; transform:translate(-50%, -50%);
             &.yt{background-image: url(../images/soc-yt.png);width: 12px; height: 15px;}
             &.fb{background-image: url(../images/soc-fb.png);width: 8px;height: 14px;}
@@ -112,7 +114,7 @@
                 .img{width: 212px; height: 305px; position: relative; overflow: hidden; border-radius: 3px;     margin-bottom: 145px;  opacity: 1;
                     img{max-width: none; display: block; position: absolute; left: 50%; top: 50%; transform:translate(-50%, -50%);}
                 }
-                .img2{width: 276px;   position: relative; overflow: hidden; border-radius: 3px;height: 0; opacity: 0;
+                .img2{width: 0;   position: relative; overflow: hidden; border-radius: 3px;height: 0; opacity: 0;
                     img{max-width: none; display: block; position: absolute; left: 50%; top: 50%; transform:translate(-50%, -50%);}
                 }
                 .txt{max-width: 191px; width: 100%; background-color: #fff; border-radius: 3px; box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3); position: absolute; top: 220px; left: calc(50% - 95px);   min-height: 211px;  padding: 17px 18px 0 14px;
@@ -191,11 +193,21 @@
                 ul{position: relative; top:-3px;}
                 li{display: inline-block;background-color: #f05323;margin-left: -4px; vertical-align: top;
                     a{ padding:13px 0; margin-left: -4px;height: 42px; display: block; text-decoration: none;
-                        span{font:300 12px/14px 'Open Sans'; color:#fff; padding: 0 39px 0; border-right: 1px solid #fff;}
+                        span{font:300 12px/14px 'Open Sans'; color:#fff; padding: 0 39px 0; border-right: 1px solid #fff;position: relative;
+                            &:before{width: 60%; height:1px; background-color: #fff; content: ''; display: inline-block; position: absolute; bottom: 0;left:20%; transform:scaleX(0); transition:transform 300ms;}
+
+                        }
                     }
                     &:last-child{
                         a{
                             span{border:none;}
+                        }
+                    }
+                    &:hover{
+                        a{
+                            span{
+                                &:before{transform:scaleX(1);}
+                            }
                         }
                     }
                 }
